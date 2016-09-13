@@ -6,6 +6,8 @@ public class javaStacks {
 	public javaStacks(String text) {
 		this.text = text;
 	}
+	//test
+	//some comment
 	public boolean isBalancedBrackets(){
 		Stack<Character> stack = new Stack<>();
 		Character c;
