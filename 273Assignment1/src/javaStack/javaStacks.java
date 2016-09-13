@@ -6,8 +6,8 @@ public class javaStacks {
 	public javaStacks(String text) {
 		this.text = text;
 	}
-	//test
-	//some comment
+	//For a given piece of code, 
+	//write a program to detect if the code has balanced brackets.
 	public boolean isBalancedBrackets(){
 		Stack<Character> stack = new Stack<>();
 		Character c;
