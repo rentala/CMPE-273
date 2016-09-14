@@ -1,7 +1,5 @@
 package javaGenerics;
 
-import java.lang.reflect.Field;
-
 public class Manipulator<T>{
 
 	T[] col;

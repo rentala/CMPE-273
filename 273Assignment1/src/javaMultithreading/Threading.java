@@ -1,5 +1,9 @@
 package javaMultithreading;
-
+/*
+ * Write a class that can perform an operation in synchronisation mode 
+ * and in non synchronisation mode.
+ * Showcase the difference in output for both cases.
+ */
 public class Threading {
 
 	public Threading(boolean isSync) {
