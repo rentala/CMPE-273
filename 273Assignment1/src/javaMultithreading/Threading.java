@@ -42,7 +42,7 @@ public class Threading {
 	Thread threadOne = new Thread(new Runnable(){
 		public void run()
 		{
-			for (int i=0;i<5;i++)
+			for (int i=0;i<1;i++)
 				callBuild("t1 ");
 		}
 	});
@@ -50,7 +50,7 @@ public class Threading {
 		public void run()
 		{
 
-			for (int i=0;i<5;i++)
+			for (int i=0;i<1;i++)
 				callBuild("t2 ");
 		}
 	});

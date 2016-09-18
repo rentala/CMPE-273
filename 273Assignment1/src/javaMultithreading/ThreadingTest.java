@@ -8,17 +8,19 @@ public class ThreadingTest {
 
 	@Test
 	public void test() {
-		String ExpectedOutput = "start {t1 }{t1 }{t1 }{t1 }{t1 }{t2 }{t2 }{t2 }{t2 }{t2 }";
+		String  ExpectedOutput1= "start {t1 }{t2 }";
+		String ExpectedOutput2 = "start {t1 }{t2 }";
 		Threading nonsyncThread = new Threading(false);
 		nonsyncThread.Start();
 		String nonSyncOutput = nonsyncThread.op;
-		assertThat(nonSyncOutput, not(equalTo(ExpectedOutput)));
+		assertThat(nonSyncOutput, not(equalTo(ExpectedOutput1)));
+		assertThat(nonSyncOutput, not(equalTo(ExpectedOutput2)));
 		System.out.println(nonSyncOutput);
 		Threading syncThread = new Threading(true);
 		syncThread.Start();
 		String SyncOutput = syncThread.op;
 		System.out.println(SyncOutput);
-		assertEquals(ExpectedOutput, SyncOutput);
+		assert SyncOutput.equals(ExpectedOutput1) || SyncOutput.equals(ExpectedOutput2);
 	}
 
 }	
