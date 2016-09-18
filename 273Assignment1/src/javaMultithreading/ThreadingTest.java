@@ -20,6 +20,7 @@ public class ThreadingTest {
 		syncThread.Start();
 		String SyncOutput = syncThread.op;
 		System.out.println(SyncOutput);
+		//assert or
 		assert SyncOutput.equals(ExpectedOutput1) || SyncOutput.equals(ExpectedOutput2);
 	}
 
